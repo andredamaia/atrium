@@ -16,13 +16,22 @@ function Header(){
                             <img className="img-logo" src={logo} alt="" />
                         </div>
 
-                        <div className="col-12 col-md-3 offset-md-1 text-right">
-                            <span>Menu</span>
-                            <img src={hamburgermenu} alt="" />
+                        <div className="col-12 col-md-3 offset-md-2 text-right">
+                            <div className="menu-holder">
+                                <span>Menu</span>
+                                <img src={hamburgermenu} alt="" />
+
+                                <ul className="list-menu">
+                                    <li><a href="/empresa">Empresa</a></li>
+                                    <li><a href="/equipamentos">Equipamentos</a></li>
+                                    <li><a href="/produtos">Produtos</a></li>
+                                    <li><a href="/contato">Contato</a></li>
+                                </ul>
+                            </div>
                         </div>
 
-                        <div className="col-12 col-md-4 text-right">
-                            <a href="/">Solicitar Orçamento
+                        <div className="col-12 col-md-3 text-right">
+                            <a href="/" className="button-default">Solicitar Orçamento
                                 <ReactArrow className="small-arrow" />
                             </a>
                         </div>

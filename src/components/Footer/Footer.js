@@ -14,11 +14,10 @@ function Footer(){
                         <div className="col-12 col-md-4">
                             <h5>Entre em contato e nos conte como podemos te ajudar</h5>
 
-                            <p className="email">contato@atrium.com.br</p>
+                            <a href="mailto:contato@atrium.com.br" className="email">contato@atrium.com.br</a>
                         </div>
 
-                        <div className="col-12 col-md-3 offset-md-2">
-                            
+                        <div className="col-12 col-md-3 offset-md-3">
                             <p className="title">Contato</p>
 
                             <p>+55 47 3025 3991<br/>
@@ -26,8 +25,7 @@ function Footer(){
                             contato@atrium.com.br</p>
                         </div>
 
-                        <div className="col-12 col-md-3">
-                            
+                        <div className="col-12 col-md-2">
                             <p className="title">Endereço</p>
 
                             <p>Rua Clodoaldo Gomes<br/>

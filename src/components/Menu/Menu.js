@@ -10,27 +10,27 @@ import './styles.css';
 function Menu(){
     return(
         <>
-            <menu>
+            <div className="menu">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-md-3">
+                    <div className="row d-flex align-items-center">
+                        <div className="col-12 col-md-4">
                             <img src={logo} alt="" />
                         </div>
 
-                        <div className="col-12 col-md-7 offset-md-2">
+                        <div className="col-12 col-md-8">
                             <ul>
-                                <li>Empresa</li>
+                                <li><a href="/empresa">Empresa</a></li>
 
-                                <li>Equipamentos</li>
+                                <li><a href="/equipamentos">Equipamentos</a></li>
 
-                                <li>Produtos</li>
+                                <li><a href="/produtos">Produtos</a></li>
 
-                                <li>Contato</li>
+                                <li><a href="/contato">Contato</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </menu>
+            </div>
         </>
     )
 }

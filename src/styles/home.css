@@ -2,8 +2,35 @@
     background: url('../images/Background.jpg') center center no-repeat;
     background-size: cover;
     padding: 100px 0; 
-    height: 100vh; 
+    height: 100vh;
+    position: relative;
 }
+
+.bg-banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-banner .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: rgba(0,0,0,.6);
+}
+
 .bg-banner p {
     color: #FFFFFF;
     line-height: 34px;
@@ -57,8 +84,7 @@
     font-size: 14px;
     transition: all .3s ease-in-out;
 }
-
-.bg-blue a:hover { color: #fff; opacity: .8; text-decoration: none; }
+    .bg-blue a:hover { color: #fff; text-decoration: none; background: #E74E00; }
 
 
 .small-arrow {
@@ -79,9 +105,7 @@
 }
 
 .molde-1 {
-    border: solid 1px #D3DCE5;
-    text-align: center;
-    padding: 15px 10px 4px;
+    
     
 }
 
@@ -113,15 +137,6 @@
     padding-bottom: 15px;
 }
 
-.bg-moldes h4 {
-    color:#304659;
-    font-size: 40px;
-    line-height: 30px;
-    text-transform: uppercase;
-    padding-bottom: 35px;
-    line-height: 20px;
-}
-
 .bg-moldes p {
     color:#304659;
     font-size: 16px;
@@ -139,26 +154,25 @@
 
 .clients-holder {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
 }
 
 .clients-holder div { 
-    width: 90%;
-    margin-top: 15px;
+    width: 100%;
     display: flex; 
     justify-content: center; 
-    align-items: center; 
-    border-style: solid;
-        border-top-width: 0.5px;
-        border-right-width: 0.5px;
-        border-bottom-width: 0.5px;
-        border-left-width: 0.5px;
-        color: #707070;
-        padding: 50px 0;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 30px rgb(105, 112, 89, .15);
+    background: #fff;
+    height: 210px;
+    transition: all .3s ease-in-out;
 }
-
+ 
 .clients-holder .box {
-    margin: 80px;
+    /* margin: 80px; */
+    transform: translateY(50px);
 }
 
 .bg-empresas img {
@@ -187,6 +201,24 @@
 .texts {
     padding-top: 70px;
 }
+
+.box-molde {
+    /* height: 460px; */
+    border: solid 1px #D3DCE5;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+    .box-molde .molde-image {
+        height: 220px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-molde .molde-image img { max-height: 100%; }
 
 @media (max-width: 948px) {
 

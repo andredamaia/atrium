@@ -4,16 +4,23 @@ footer {
 }
 footer p {
     font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    opacity: .8;
 }
 
 footer p.title {
     font-size: 17px;
-    font-weight: 500;
+    font-weight: 700;
+    line-height: 25px;
+    margin-bottom: 15px;
 }
 
-footer p.email {
+footer a.email {
     color: #668ED4;
     font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Lato', sans-serif;
 }
 
 footer h5 {
