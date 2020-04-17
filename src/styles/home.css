@@ -6,15 +6,17 @@
 }
 .bg-banner p {
     color: #FFFFFF;
-    line-height: 15px;
+    line-height: 34px;
     font-size: 26px;
+    font-weight: 100;
 }
 
 .bg-banner h1 {
     color: #FFFFFF;
     font-size: 60px;
     padding-bottom: 20px;
-    padding-top: 120px;
+    padding-top: 40px;
+    font-weight: 700;
 }
 
 .bg-small {
@@ -26,7 +28,15 @@
 
 .bg-small span {
     padding-left: 10px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
 }
+    .bg-small strong { font-weight: 700; }
+    .bg-small span img { margin-right: 15px; }
 
 .bg-blue {
     background: #153F7D;

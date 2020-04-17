@@ -9,20 +9,19 @@ import './styles.css';
 function Header(){
     return(
         <>
-        
             <header> 
                 <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-md-3">
+                    <div className="row d-flex align-items-center">
+                        <div className="col-12 col-md-4">
                             <img className="img-logo" src={logo} alt="" />
                         </div>
 
-                        <div className="col-12 col-md-3 offset-md-2 text-right">
+                        <div className="col-12 col-md-3 offset-md-1 text-right">
                             <span>Menu</span>
                             <img src={hamburgermenu} alt="" />
                         </div>
 
-                        <div className="col-12 col-md-4">
+                        <div className="col-12 col-md-4 text-right">
                             <a href="/">Solicitar Orçamento
                                 <ReactArrow className="small-arrow" />
                             </a>

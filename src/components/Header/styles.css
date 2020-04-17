@@ -12,23 +12,27 @@ header.menu {
 }
 
 header img.img-logo {
-    width: 100%;
-    margin-top: -10px;
+    max-width: 100%;
 }
 
 header img {
-    padding-right: 15px;
-    width: 45px;
+    margin-right: 15px;
 }
 header a {
     border: solid 1px #E74E00;
-    padding: 6px 15px;
+    padding: 0 25px;
     border-radius: 33px;
     color: #fff;
-    background: #E74E00; 
+    background: #E74E00;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 14px;
+    transition: all .3s ease-in-out;
 }
+    header a:hover { color: #fff; opacity: .8; text-decoration: none; }
 
 
 header span {

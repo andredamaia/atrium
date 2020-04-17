@@ -23,9 +23,7 @@ import '../styles/home.css';
 function Home(){
     return(
         <>
-            
-
-            <div className="bg-banner d-flex align-center">
+            <div className="bg-banner d-flex align-items-center">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6">
@@ -45,24 +43,25 @@ function Home(){
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-4">
-
-                            <img src={Blur} alt="" />
-                            <span><strong>30 anos</strong> de expertise</span>
-
-                        </div>
-
-                        <div className="col-12 col-md-4">
-
-                            <img src={Layers} alt="" />
-                            <span><strong>3500 m²</strong> de área construída</span>
+                            <span>
+                                <div><img src={Blur} alt="" /></div>
+                                <div><strong>30 anos</strong> de expertise</div>
+                            </span>
 
                         </div>
 
                         <div className="col-12 col-md-4">
+                            <span>
+                                <div><img src={Layers} alt="" /></div>
+                                <div><strong>3500 m²</strong> de área construída</div>
+                            </span>
+                        </div>
 
-                            <img src={featurethree} alt="" />
-                            <span><strong>30 ton.</strong> de capacidade produtiva</span>
-
+                        <div className="col-12 col-md-4">
+                            <span>
+                                <div><img src={featurethree} alt="" /></div>
+                                <div><strong>30 ton.</strong> de capacidade produtiva</div>
+                            </span>
                         </div>
                     </div>
                 </div>
