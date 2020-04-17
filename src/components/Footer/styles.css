@@ -1,0 +1,27 @@
+footer {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+footer p {
+    font-size: 17px;
+}
+
+footer p.title {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+footer p.email {
+    color: #668ED4;
+    font-size: 20px;
+}
+
+footer h5 {
+    font-size: 26px;
+}
+
+@media (max-width: 948px) {
+    footer {
+        text-align: center;
+    }
+}

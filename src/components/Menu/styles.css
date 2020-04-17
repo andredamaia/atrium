@@ -1,0 +1,31 @@
+menu {
+    background: #153F7D;
+    color: #fff;
+    padding: 20px 0;
+}
+
+menu img {
+    padding: 40px 0;
+}
+
+ul {
+    padding: 56px 140px;
+    position: relative;
+}
+
+li { display: inline; 
+    margin-right:65px;
+    font-size: 20px; 
+}
+
+@media (max-width: 948px) {
+    menu {
+        margin: 15px 0;
+    }
+
+    li{
+        display: list-item;
+        list-style: none;
+        padding: 5px 0;
+    }
+}
