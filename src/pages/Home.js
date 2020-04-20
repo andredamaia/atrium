@@ -80,7 +80,7 @@ function Home(){
             <div className="bg-blue">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 text-center">
+                        <div className="col-12 col-md-6 offset-md-3 text-center">
                             <h4>Atrium Ferramentaria</h4>
 
                             <p>Com mais de 30 anos de expertise, a Atrium é referência na fabricação de ferramentais,
