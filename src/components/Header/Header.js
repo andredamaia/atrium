@@ -12,11 +12,11 @@ function Header(){
             <header> 
                 <div className="container">
                     <div className="row d-flex align-items-center">
-                        <div className="col-12 col-md-4">
+                        <div className="col-9 col-md-4">
                             <img className="img-logo" src={logo} alt="" />
                         </div>
 
-                        <div className="col-12 col-md-3 offset-md-2 text-right">
+                        <div className="col-3 col-md-3 offset-md-2 text-right">
                             <div className="menu-holder">
                                 <span>Menu</span>
                                 <img src={hamburgermenu} alt="" />

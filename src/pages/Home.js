@@ -26,7 +26,7 @@ function Home(){
     return(
         <>
             <div className="bg-banner d-flex align-items-center">
-                <video id="background-video" muted loop autoPlay>
+                <video id="background-video" loop autoPlay muted>
                     <source src={video} type="video/mp4" />
                     <source src={video} type="video/ogg" />
                     Your browser does not support the video tag.
@@ -83,8 +83,8 @@ function Home(){
                         <div className="col-12 text-center">
                             <h4>Atrium Ferramentaria</h4>
 
-                            <p>Com mais de 30 anos de expertise, a Atrium é referência na fabricação de ferramentais,<br/>
-                            moldes e dispositivos. Possui parque fabril de aproximadamente 3.500 m² e capacidade<br/>
+                            <p>Com mais de 30 anos de expertise, a Atrium é referência na fabricação de ferramentais,
+                            moldes e dispositivos. Possui parque fabril de aproximadamente 3.500 m² e capacidade
                             produtiva para ferramentais de até 30 toneladas.</p>
 
                             <a href="/">Saiba mais
@@ -148,10 +148,10 @@ function Home(){
             <div className="bg-blue">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12 text-center">
-                            <h2>Solicite um orçamento</h2>
+                        <div className="col-12 col-md-6 offset-md-3 text-center">
+                            <h4>Solicite um orçamento</h4>
 
-                            <p>Nos envie uma solicitação de orçamento e nossa equipe entrará em contato<br/> com você em até 24 horas.</p>
+                            <p>Nos envie uma solicitação de orçamento e nossa equipe entrará em contato com você em até 24 horas.</p>
 
                             <a href="/">Solicitar Orçamento
                                 <ReactArrow className="small-arrow" />

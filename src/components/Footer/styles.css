@@ -30,5 +30,11 @@ footer h5 {
 @media (max-width: 948px) {
     footer {
         text-align: center;
+        padding: 30px 0;
+    }
+
+    footer p.title {
+        margin-bottom: 10px;
+        margin-top: 20px;
     }
 }

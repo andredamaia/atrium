@@ -56,7 +56,7 @@ header span {
 
 @media (max-width: 948px) {
     
-    header{ padding: 25px;}
+    header{ padding: 25px 0;}
 
     a{ text-align: right;}
 

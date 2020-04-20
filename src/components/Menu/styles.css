@@ -25,9 +25,28 @@
         margin: 15px 0;
     }
 
+    .menu {
+        padding: 30px 0;
+    }
+
     li{
         display: list-item;
         list-style: none;
         padding: 5px 0;
+    }
+
+    .menu ul li {
+        padding-top: 15px;
+        text-align: center;
+    }
+
+    .menu ul li {
+        display: block;
+        margin: 0;
+    
+    }
+
+    .menu img {
+        margin-bottom: 15px;
     }
 }
