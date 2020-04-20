@@ -63,7 +63,7 @@ h5 {
 
 .button-default {
     border: solid 1px #E74E00;
-    padding: 0 25px;
+    padding: 0 13px;
     border-radius: 33px;
     color: #fff;
     background: #E74E00;
@@ -72,10 +72,14 @@ h5 {
     height: 50px;
     display: inline-block;
     line-height: 50px;
-    font-size: 14px;
+    font-size: 12px;
     transition: all .3s ease-in-out;
 }
     .button-default:hover { color: #fff; opacity: .8; text-decoration: none; }
+
+    @media (max-width: 1300px) {
+        .container{max-width: 968px;}
+    }
 
 @media (max-width: 968px) {
     h4 {

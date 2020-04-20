@@ -37,7 +37,7 @@ function Home(){
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-md-6">
-                            <h1>Construímos o futuro com o aço</h1>
+                            <h1>Construímos o futuro com aço</h1>
 
                             <p>Moldes de termoformagens</p>
 
