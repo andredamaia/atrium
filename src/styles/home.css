@@ -170,7 +170,7 @@
 }
 
 .bg-empresas img {
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .bg-empresas p.special {
@@ -216,13 +216,15 @@
 
 @media (max-width: 948px) {
 
+    .bg-blue a { font-size: 12px; }
+
     .bg-banner {
-        height: 60vh;
-        padding: 50px 0;
+        height: auto;
+        padding: 80px 0 30px;
     }
 
     .bg-banner h1 {
-        font-size: 38px;
+        font-size: 36px;
         margin-top: 40px;
     }
 
@@ -232,7 +234,7 @@
 
     .bg-banner p {
         line-height: 15px;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     a.button-default {
@@ -261,12 +263,6 @@
         font-size: 16px;
     }
 
-    .bg-blue h4 {
-        font-size: 26px !important;
-        line-height: 32px !important;
-        padding-bottom: 15px;
-    }
-
     .bg-moldes {
         padding: 30px 0;
     }
@@ -285,6 +281,8 @@
     .bg-empresas p {
         font-size: 16px;
     }
+
+    .bg-empresas img { max-width: 70%; padding: 0; }
 
     .clients-holder {
         display: grid;

@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as ReactArrow} from '../../images/arrow.svg';
+import { ReactComponent as ReactArrow } from '../../images/arrow.svg';
 
 import logo from '../../images/logo.png';
 import hamburgermenu from '../../images/hamburger-menu.png';
@@ -26,6 +26,9 @@ function Header(){
                                     <li><a href="/equipamentos">Equipamentos</a></li>
                                     <li><a href="/produtos">Produtos</a></li>
                                     <li><a href="/contato">Contato</a></li>
+                                    <li className="button-highlight d-md-none">
+                                        <a href="/orcamento">Solicitar orçamento</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

@@ -41,6 +41,7 @@ h4 {
     font-weight: 700;
 }
     .bg-blue h4 { color: #fff; }
+    
 
 h4 small {
     font-size: 13px;
@@ -75,3 +76,11 @@ h5 {
     transition: all .3s ease-in-out;
 }
     .button-default:hover { color: #fff; opacity: .8; text-decoration: none; }
+
+@media (max-width: 968px) {
+    h4 {
+        font-size: 26px !important;
+        line-height: 32px !important;
+        padding-bottom: 15px;
+    }
+}

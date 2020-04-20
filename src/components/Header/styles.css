@@ -37,6 +37,7 @@ header span {
     right: 0;
     margin: auto;
     display: none;
+    overflow: hidden;
 }
 .list-menu li {
     list-style: none;
@@ -53,10 +54,18 @@ header span {
 }
     .list-menu li a:hover { color: #fff; background: #153F7D; text-decoration: none; }
 
+.button-highlight {
+    padding: 0;
+}
+.button-highlight a {
+    background: #e74e01;
+    color: #fff !important;
+}
+
 
 @media (max-width: 948px) {
     
-    header{ padding: 25px 0;}
+    header { padding: 25px 0; }
 
     a{ text-align: right;}
 
