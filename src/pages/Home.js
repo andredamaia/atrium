@@ -114,6 +114,11 @@ function Home(){
                                     <h6>Moldes de termoformagem</h6>
 
                                     <p>Moldes de termoformagem, termo-compressão, vacuumforming e injeção de PU</p>
+
+                                    <div className="top"></div>
+                                    <div className="right"></div>
+                                    <div className="left"></div>
+                                    <div className="bottom"></div>
                                 </div>
                             </div>
 
@@ -126,6 +131,11 @@ function Home(){
                                     <h6>Dispositivos de controle</h6>
 
                                     <p>Dispositivos para controle, montagem, corte/furação</p>
+
+                                    <div className="top"></div>
+                                    <div className="right"></div>
+                                    <div className="left"></div>
+                                    <div className="bottom"></div>
                                 </div>
                             </div>
 
@@ -138,6 +148,11 @@ function Home(){
                                     <h6>Ferramentais de fundição</h6>
 
                                     <p>Produzimos ferramentas para fundição, juntamente com os seus respectivos dispositivos</p>
+
+                                    <div className="top"></div>
+                                    <div className="right"></div>
+                                    <div className="left"></div>
+                                    <div className="bottom"></div>
                                 </div>
                             </div>
                         
