@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import $ from 'jquery';
 
 import './styles.css';
 
@@ -40,9 +39,13 @@ const Hamburger = ({ state }) => {
                 css: {display: 'none'}
             });
 
+            gsap.to('body', 0, { css: {overflow: 'visible' }} );
+
         } else if(state.clicked === true || (state.clicked === true && state.initial === null)) {
             // Abre o menu
             // menu.style.display = 'block'
+
+            gsap.to('body', 0, { css: {overflow: 'hidden' }} );
 
             const tl = gsap.timeline();
 

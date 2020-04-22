@@ -54,6 +54,8 @@ header span {
 }
     .list-menu li a:hover { color: #fff; background: #153F7D; text-decoration: none; }
 
+.button-nav { cursor: pointer; }
+
 .button-highlight {
     padding: 0;
 }

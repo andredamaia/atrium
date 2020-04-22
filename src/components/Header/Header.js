@@ -6,6 +6,7 @@ import { ReactComponent as ReactArrow } from '../../images/arrow.svg';
 
 import logo from '../../images/logo.png';
 import hamburgermenu from '../../images/hamburger-menu.png';
+import close from '../../images/close.png';
 
 import './styles.css';
 
@@ -64,8 +65,17 @@ function Header(){
                                     onClick={handleMenu}
                                     className="button-nav"
                                 >
-                                    <span>Menu</span>
-                                    <img src={hamburgermenu} alt="" />
+                                    {state.clicked ? (
+                                        <>
+                                            <span>Menu</span>
+                                            <img src={close} alt="" />
+                                        </>
+                                    ) : (
+                                        <>
+                                            <span>Menu</span>
+                                            <img src={hamburgermenu} alt="" />
+                                        </>
+                                    )}
                                 </div>
                             </div>
                         </div>
