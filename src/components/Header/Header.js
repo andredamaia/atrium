@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import SidebarMenu from '../SidebarMenu';
+
 import { ReactComponent as ReactArrow } from '../../images/arrow.svg';
 
 import logo from '../../images/logo.png';
@@ -7,6 +10,44 @@ import hamburgermenu from '../../images/hamburger-menu.png';
 import './styles.css';
 
 function Header(){
+    const [state, setState] = useState({
+        initial: false,
+        clicked: null,
+        menuName: "Menu"
+    });
+
+    const [disabled, setDisabled] = useState(false);
+
+    const handleMenu = () => {
+        disableMenu();
+
+        if(state.initial === false) {
+            setState({
+                initial: null,
+                clicked: true,
+                menuName: "Close"
+            });
+        } else if (state.clicked === true){
+            setState({
+                clicked: !state.clicked,
+                menuName: "Menu"
+            });
+        } else if (state.clicked === false){
+            setState({
+                clicked: !state.clicked,
+                menuName: "Close"
+            });
+        }
+    }
+
+    // Ativa e desativa o botão do menu
+    const disableMenu = () => {
+        setDisabled(!disabled);
+        setTimeout(() => {
+            setDisabled(false);
+        }, 1200);
+    }
+
     return(
         <>
             <header> 
@@ -18,18 +59,14 @@ function Header(){
 
                         <div className="col-3 col-md-3 offset-md-2 text-right">
                             <div className="menu-holder">
-                                <span>Menu</span>
-                                <img src={hamburgermenu} alt="" />
-
-                                <ul className="list-menu">
-                                    <li><a href="/empresa">Empresa</a></li>
-                                    <li><a href="/equipamentos">Equipamentos</a></li>
-                                    <li><a href="/produtos">Produtos</a></li>
-                                    <li><a href="/contato">Contato</a></li>
-                                    <li className="button-highlight d-md-none">
-                                        <a href="/orcamento">Solicitar orçamento</a>
-                                    </li>
-                                </ul>
+                                <div
+                                    disabled={disabled} 
+                                    onClick={handleMenu}
+                                    className="button-nav"
+                                >
+                                    <span>Menu</span>
+                                    <img src={hamburgermenu} alt="" />
+                                </div>
                             </div>
                         </div>
 
@@ -40,7 +77,9 @@ function Header(){
                         </div>
                     </div>
                 </div>
-            </header>       
+            </header>     
+
+            <SidebarMenu state={state} disabled={disabled} />  
         </>
     )
 }
